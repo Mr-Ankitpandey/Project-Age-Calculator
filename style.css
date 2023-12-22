@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    background-color: rgb(89, 85, 85);
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+   
+}
+.age-container{
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.age-container #title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: aqua;
+}
+.birth-date p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+#enter-date{
+    text-align: center;
+    color: salmon;
+}
+.birth-date input{
+    font-size: 1.5rem;
+    padding:0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid grey;
+    background-color: white;
+}
+#btn{
+    margin-top: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#reset-btn{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#btn:hover{
+    border: 2px solid black;
+}
+#reset-btn:hover{
+    border: 2px solid black;
+}
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    color: lawngreen;
+}
