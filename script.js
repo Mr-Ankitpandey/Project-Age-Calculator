@@ -9,6 +9,12 @@ let resetbtn = document.querySelector('#reset-btn');
 let birthdate = document.querySelector('.birth-date');
 let successflag = false;
 
+
+    const date = new Date();
+    let day = date.getDate();
+    let month = (date.getMonth() + 1);
+    let year = date.getFullYear();
+
 function checkblank(){
     if(dayvar.value === "" || monthvar.value === "" || yearvar.value === ""){
         alert('Date cannot be left blank');
@@ -36,7 +42,7 @@ function checkvalue(){
     if(successflag){
         return;
     }
-    if(dayvar.value > "31" || monthvar.value > "12" || yearvar.value > "2023"){
+    if(dayvar.value > "31" || monthvar.value > "12" || yearvar.value > `${year}`){
         alert('Date out of range');
         successflag = true;
     }
@@ -48,10 +54,6 @@ function calculateage(){
         return;
     }
     
-    const date = new Date();
-    let day = date.getDate();
-    let month = (date.getMonth() + 1);
-    let year = date.getFullYear();
     let m = [31,28,31,30,31,30,31,31,30,31,30,31];
 
     if((dayvar.value)> day){
